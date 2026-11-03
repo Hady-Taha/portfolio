@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Hady Taha — Backend-Focused Software Engineer | Python & Django Specialist</title>
+
+	<!-- SEO & Social Meta Tags -->
+	<meta name="description"
+		content="Portfolio of Hady Taha, a Backend-Focused Software Engineer with 5+ years of experience specializing in Python, Django, PostgreSQL, scalable APIs, and streaming platforms.">
+	<meta name="keywords"
+		content="Hady Taha, Backend Software Engineer, Python, Django, PostgreSQL, Redis, Celery, REST API, Suez Egypt, VOD, HLS, WebRTC, Full-Stack">
+	<meta name="author" content="Hady Taha">
+
+	<!-- Open Graph / Social Sharing -->
+	<meta property="og:title" content="Hady Taha — Backend-Focused Software Engineer">
+	<meta property="og:description"
+		content="5+ years of experience building scalable backend architectures, powerful APIs, and reliable web applications with Python & Django.">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="img/avatar-head.png">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="img/avatar-head.png">
+
+	<!-- Theme Pre-init Script (Zero Flash) -->
+	<script>
+		(function() {
+			var saved = localStorage.getItem('hady_theme');
+			if (saved === 'light' || saved === 'dark') {
+				document.documentElement.setAttribute('data-bs-theme', saved);
+			}
+		})();
+	</script>
+
+	<!-- Core CSS Libraries -->
+	<link rel="stylesheet" href="css/lib/bootstrap.min.css">
+	<link rel="stylesheet" href="css/lib/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="css/lib/aos.css">
+	<link rel="stylesheet" href="css/lib/toastify.min.css">
+
+	<!-- Custom Main Styles -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<!-- ========================================================
+    Top Navigation Bar
+    ======================================================== -->
+	<nav class="site-navbar">
+		<div class="site-container site-navbar-inner">
+			<!-- Monogram Logo -->
+			<a href="#home" class="nav-brand-logo">
+				<span>Hady</span><span class="nav-brand-dot">.</span>
+			</a>
+
+			<!-- Center Links -->
+			<ul class="nav-menu-list">
+				<li><a href="#home" class="nav-menu-link active">Home</a></li>
+				<li><a href="#projects" class="nav-menu-link">Projects</a></li>
+				<li><a href="#experience" class="nav-menu-link">Experience</a></li>
+				<li><a href="#services" class="nav-menu-link">Services</a></li>
+				<li><a href="#skills" class="nav-menu-link">Skills</a></li>
+				<li><a href="#contact" class="nav-menu-link">Contact</a></li>
+			</ul>
+
+			<!-- Action Button & Theme Toggle -->
+			<div class="d-flex align-items-center gap-2">
+				<button type="button" class="btn-theme-toggle" id="themeToggleBtn" aria-label="Toggle light and dark theme" title="Toggle theme">
+					<i class="bi bi-sun-fill icon-sun"></i>
+					<i class="bi bi-moon-stars-fill icon-moon"></i>
+				</button>
+				<a href="#contact" class="btn-nav-contact">
+					Get in Touch
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content Container -->
+	<main class="site-container">
+
+		<!-- ========================================================
+         Hero Section (Cosmic Radar & Serif Elegance Reference)
+         ======================================================== -->
+		<section class="hero-section" id="home">
+			<!-- Ambient Concentric Orbit Rings -->
+			<div class="hero-radar-container" aria-hidden="true">
+				<div class="radar-circle radar-circle-1"></div>
+				<div class="radar-circle radar-circle-2"></div>
+				<div class="radar-circle radar-circle-3"></div>
+				<div class="radar-circle radar-circle-4"></div>
+			</div>
+
+			<!-- Floating Glowing Sparkle Stars -->
+			<div class="hero-sparkles-container" aria-hidden="true">
+				<!-- Large Amber Star (Right) -->
+				<svg class="sparkle-star star-lg star-right" viewBox="0 0 48 48" fill="none">
+					<path d="M24 0C24 13.2548 34.7452 24 48 24C34.7452 24 24 34.7452 24 48C24 34.7452 13.2548 24 0 24C13.2548 24 24 13.2548 24 0Z" fill="#D97706"/>
+				</svg>
+				<!-- Medium Amber Star (Left) -->
+				<svg class="sparkle-star star-md star-left" viewBox="0 0 36 36" fill="none">
+					<path d="M18 0C18 9.94113 26.0589 18 36 18C26.0589 18 18 26.0589 18 36C18 26.0589 9.94113 18 0 18C9.94113 18 18 9.94113 18 0Z" fill="#D97706"/>
+				</svg>
+				<!-- Small Star (Top Left) -->
+				<svg class="sparkle-star star-sm star-top-left" viewBox="0 0 24 24" fill="none">
+					<path d="M12 0C12 6.62742 17.3726 12 24 12C17.3726 12 12 17.3726 12 24C12 17.3726 6.62742 12 0 12C6.62742 12 12 6.62742 12 0Z" fill="#FCD34D"/>
+				</svg>
+				<!-- Small Star (Far Right) -->
+				<svg class="sparkle-star star-xs star-far-right" viewBox="0 0 20 20" fill="none">
+					<path d="M10 0C10 5.52285 14.4772 10 20 10C14.4772 10 10 14.4772 10 20C10 14.4772 5.52285 10 0 10C5.52285 10 10 5.52285 10 0Z" fill="#D97706"/>
+				</svg>
+				<!-- Glowing Planet Orb (Top Right) -->
+				<div class="sparkle-orb orb-top-right"></div>
+			</div>
+
+			<!-- Hero Content -->
+			<div class="hero-content-inner">
+				<!-- Top Avatar & Availability Pill Group -->
+				<div class="hero-badge-group" data-aos="zoom-in" data-aos-duration="600">
+					<!-- Circular Avatar Head -->
+					<div class="hero-avatar-peeking">
+						<img src="img/avatar-head.jpg" alt="Hady Taha Avatar" class="hero-avatar-img">
+					</div>
+					
+				</div>
+
+				<!-- Main Headline with Editorial Display Serif -->
+				<h1 class="hero-display-title" data-aos="fade-up" data-aos-delay="100">
+					Hi, I'm Hady Taha.
+					<span class="hero-display-sub">Backend-Focused Software Engineer</span>
+				</h1>
+
+				<!-- Description / Bio -->
+				<p class="hero-lead-text" data-aos="fade-up" data-aos-delay="200">
+					Python &amp; Django Specialist with 5+ years of experience building scalable backend architectures, powerful APIs, and reliable web applications.
+				</p>
+
+				<!-- CTA Buttons -->
+				<div class="hero-actions-group" data-aos="fade-up" data-aos-delay="300">
+					<!-- Primary CTA: Let's talk -->
+					<a href="#contact" class="hero-btn-primary">
+						<span class="btn-emoji">👋</span>
+						<span>Let's talk</span>
+					</a>
+					<!-- Secondary CTA: View My Work -->
+					<a href="#projects" class="hero-btn-secondary">
+						<span>View My Work</span>
+						<i class="bi bi-arrow-up-right"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========================================================
+         Tech Stack / Experience With Section
+         ======================================================== -->
+		<section class="tech-strip-section" data-aos="fade-up">
+			<span class="section-mini-label">EXPERIENCE WITH</span>
+			<div class="tech-chips-row">
+				<div class="tech-chip"><i class="bi bi-filetype-py"></i><span>Python</span></div>
+				<div class="tech-chip"><i class="bi bi-layers-fill"></i><span>Django</span></div>
+				<div class="tech-chip"><i class="bi bi-database-fill"></i><span>PostgreSQL</span></div>
+				<div class="tech-chip"><i class="bi bi-lightning-charge-fill"></i><span>Redis</span></div>
+				<div class="tech-chip"><i class="bi bi-boxes"></i><span>Docker</span></div>
+				<div class="tech-chip"><i class="bi bi-cloud-check-fill"></i><span>AWS</span></div>
+				<div class="tech-chip"><i class="bi bi-gear-wide-connected"></i><span>Celery</span></div>
+				<div class="tech-chip"><i class="bi bi-terminal-fill"></i><span>Linux</span></div>
+				<div class="tech-chip"><i class="bi bi-broadcast"></i><span>WebRTC</span></div>
+			</div>
+		</section>
+
+		<!-- ========================================================
+         Projects Section (2-Column Reference Layout)
+         ======================================================== -->
+		<section class="projects-section" id="projects">
+			<h2 class="section-colored-heading heading-projects" data-aos="fade-up">
+				PROJECTS
+			</h2>
+
+			<div class="projects-grid">
+				<!-- Project 1: Manasa V3 -->
+				<div class="project-card" data-project-id="manasa" data-aos="fade-up" data-aos-delay="100">
+					<div class="project-card-thumb-wrap">
+						<img src="img/project-mockup.jpg" alt="Manasa V3 Educational LMS" class="project-card-thumb">
+						<div class="project-card-thumb-overlay"></div>
+					</div>
+					<div class="project-card-body">
+						<div class="project-card-meta">
+							<span class="project-sub-tag">LEARNING MANAGEMENT SYSTEM</span>
+							<h3 class="project-card-title">MANASA V3 LMS</h3>
+						</div>
+						<div class="project-card-arrow">
+							<i class="bi bi-arrow-up-right"></i>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 2: Amaan Stream -->
+				<div class="project-card" data-project-id="amaan" data-aos="fade-up" data-aos-delay="200">
+					<div class="project-card-thumb-wrap">
+						<img src="img/project-smarthome.jpg" alt="Amaan Stream Video Streaming"
+							class="project-card-thumb">
+						<div class="project-card-thumb-overlay"></div>
+					</div>
+					<div class="project-card-body">
+						<div class="project-card-meta">
+							<span class="project-sub-tag">VIDEO-ON-DEMAND PLATFORM</span>
+							<h3 class="project-card-title">AMAAN STREAM VOD</h3>
+						</div>
+						<div class="project-card-arrow">
+							<i class="bi bi-arrow-up-right"></i>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 3: Live Streaming Infrastructure -->
+				<div class="project-card" data-project-id="livekit" data-aos="fade-up" data-aos-delay="100">
+					<div class="project-card-thumb-wrap">
+						<img src="img/project-healthtracker.jpg" alt="Live Streaming Infrastructure"
+							class="project-card-thumb">
+						<div class="project-card-thumb-overlay"></div>
+					</div>
+					<div class="project-card-body">
+						<div class="project-card-meta">
+							<span class="project-sub-tag">STREAMING INFRASTRUCTURE • WEBRTC</span>
+							<h3 class="project-card-title">LIVEKIT WEBRTC ENGINE</h3>
+						</div>
+						<div class="project-card-arrow">
+							<i class="bi bi-arrow-up-right"></i>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 4: Educational Q&A Platform -->
+				<div class="project-card" data-project-id="qna" data-aos="fade-up" data-aos-delay="200">
+					<div class="project-card-thumb-wrap">
+						<img src="img/project-travelhaul.jpg" alt="Educational Q&A Platform" class="project-card-thumb">
+						<div class="project-card-thumb-overlay"></div>
+					</div>
+					<div class="project-card-body">
+						<div class="project-card-meta">
+							<span class="project-sub-tag">EDUCATIONAL WEB APPLICATION</span>
+							<h3 class="project-card-title">STUDENT Q&amp;A PLATFORM</h3>
+						</div>
+						<div class="project-card-arrow">
+							<i class="bi bi-arrow-up-right"></i>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 5: E-Commerce Web Application (Full width or paired) -->
+				<div class="project-card" data-project-id="ecommerce" data-aos="fade-up" data-aos-delay="100">
+					<div class="project-card-thumb-wrap">
+						<img src="img/img.png" alt="E-Commerce Web Application" class="project-card-thumb">
+						<div class="project-card-thumb-overlay"></div>
+					</div>
+					<div class="project-card-body">
+						<div class="project-card-meta">
+							<span class="project-sub-tag">E-COMMERCE ARCHITECTURE</span>
+							<h3 class="project-card-title">CUSTOM E-COMMERCE</h3>
+						</div>
+						<div class="project-card-arrow">
+							<i class="bi bi-arrow-up-right"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========================================================
+         Experience Section (Clean Stacked List Reference)
+         ======================================================== -->
+		<section class="experience-section" id="experience">
+			<h2 class="section-colored-heading heading-experience" data-aos="fade-up">
+				EXPERIENCE
+			</h2>
+
+			<div class="experience-list-stack">
+				<!-- Experience 1: Easy-Tech -->
+				<div class="experience-item" data-aos="fade-up">
+					<div class="experience-item-header">
+						<div class="experience-role-left">
+							<div class="experience-icon-badge">
+								<i class="bi bi-briefcase-fill"></i>
+							</div>
+							<h3 class="experience-role-title">Full-Stack Developer at Easy-Tech</h3>
+						</div>
+						<span class="experience-period-badge">Sep 2020 – Present</span>
+					</div>
+					<p class="experience-desc">
+						Architecting and developing scalable backend systems using Python and Django. Building and
+						maintaining RESTful APIs, designing and optimizing PostgreSQL databases, implementing robust
+						authentication, managing Ubuntu Linux servers, orchestrating Redis background task queues, and
+						ensuring high production availability.
+					</p>
+					<div class="experience-tags-row">
+						<span class="experience-tag">Python</span>
+						<span class="experience-tag">Django</span>
+						<span class="experience-tag">PostgreSQL</span>
+						<span class="experience-tag">Redis</span>
+						<span class="experience-tag">Linux / Ubuntu</span>
+						<span class="experience-tag">Nginx</span>
+						<span class="experience-tag">Gunicorn</span>
+					</div>
+				</div>
+
+				<!-- Experience 2: Freelance Software Developer -->
+				<div class="experience-item" data-aos="fade-up">
+					<div class="experience-item-header">
+						<div class="experience-role-left">
+							<div class="experience-icon-badge">
+								<i class="bi bi-code-square"></i>
+							</div>
+							<h3 class="experience-role-title">Independent Software Developer</h3>
+						</div>
+						<span class="experience-period-badge">Mar 2021 – Present</span>
+					</div>
+					<p class="experience-desc">
+						Delivering bespoke software applications tailored for real-world business needs. Key projects
+						include an educational LMS platform for secondary-school students featuring question-and-answer
+						workflows, custom e-commerce systems with integrated product catalogs, database schema design,
+						and cloud deployments.
+					</p>
+					<div class="experience-tags-row">
+						<span class="experience-tag">Educational LMS</span>
+						<span class="experience-tag">E-Commerce</span>
+						<span class="experience-tag">System Architecture</span>
+						<span class="experience-tag">API Integration</span>
+						<span class="experience-tag">Server Deployments</span>
+					</div>
+				</div>
+
+				<!-- Experience 3: Core Engineering Specialization -->
+				<div class="experience-item" data-aos="fade-up">
+					<div class="experience-item-header">
+						<div class="experience-role-left">
+							<div class="experience-icon-badge">
+								<i class="bi bi-cpu-fill"></i>
+							</div>
+							<h3 class="experience-role-title">Systems Architecture &amp; Engineering Focus</h3>
+						</div>
+						<span class="experience-period-badge">5+ Years Practice</span>
+					</div>
+					<p class="experience-desc">
+						Committed to advancing backend engineering standards through scalable system architectures,
+						distributed computing, Video-on-Demand (VOD) transcoding pipelines, and real-time WebRTC media
+						infrastructure. Driven by analytical thinking, clean code principles, and deep technical
+						research.
+					</p>
+					<div class="experience-tags-row">
+						<span class="experience-tag">Scalable Architecture</span>
+						<span class="experience-tag">Distributed Systems</span>
+						<span class="experience-tag">VOD / HLS</span>
+						<span class="experience-tag">WebRTC</span>
+						<span class="experience-tag">High Concurrency</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========================================================
+         Services Section ("What I Do")
+         ======================================================== -->
+		<section class="services-section" id="services">
+			<h2 class="section-colored-heading heading-services" data-aos="fade-up">
+				SERVICES &amp; CAPABILITIES
+			</h2>
+
+			<div class="services-grid-2col">
+				<!-- Service 1 -->
+				<div class="service-card-item" data-aos="fade-up" data-aos-delay="100">
+					<div class="service-card-header">
+						<i class="bi bi-cpu service-card-icon"></i>
+						<h3 class="service-card-name">Backend Development</h3>
+					</div>
+					<p class="service-card-desc">
+						Building robust server-side applications using Python and Django, with emphasis on clean
+						architecture, performance, and scalability.
+					</p>
+				</div>
+
+				<!-- Service 2 -->
+				<div class="service-card-item" data-aos="fade-up" data-aos-delay="200">
+					<div class="service-card-header">
+						<i class="bi bi-hdd-network service-card-icon"></i>
+						<h3 class="service-card-name">RESTful API Engineering</h3>
+					</div>
+					<p class="service-card-desc">
+						Designing and developing reliable, secure APIs that connect modern frontends, mobile clients,
+						and third-party services.
+					</p>
+				</div>
+
+				<!-- Service 3 -->
+				<div class="service-card-item" data-aos="fade-up" data-aos-delay="100">
+					<div class="service-card-header">
+						<i class="bi bi-database service-card-icon"></i>
+						<h3 class="service-card-name">Database Engineering</h3>
+					</div>
+					<p class="service-card-desc">
+						Designing relational database structures in PostgreSQL, optimizing complex queries, and
+						configuring Redis caching for production workloads.
+					</p>
+				</div>
+
+				<!-- Service 4 -->
+				<div class="service-card-item" data-aos="fade-up" data-aos-delay="200">
+					<div class="service-card-header">
+						<i class="bi bi-camera-reels service-card-icon"></i>
+						<h3 class="service-card-name">Streaming Solutions</h3>
+					</div>
+					<p class="service-card-desc">
+						Implementing Video-on-Demand (VOD) transcoding pipelines with FFmpeg and HLS, plus real-time
+						WebRTC and LiveKit streaming.
+					</p>
+				</div>
+
+				<!-- Service 5 -->
+				<div class="service-card-item" data-aos="fade-up" data-aos-delay="100">
+					<div class="service-card-header">
+						<i class="bi bi-terminal service-card-icon"></i>
+						<h3 class="service-card-name">Server &amp; Cloud Deployment</h3>
+					</div>
+					<p class="service-card-desc">
+						Deploying and maintaining web applications on Linux/Ubuntu servers using Nginx, Gunicorn,
+						Docker, and AWS cloud infrastructure.
+					</p>
+				</div>
+
+				<!-- Service 6 -->
+				<div class="service-card-item" data-aos="fade-up" data-aos-delay="200">
+					<div class="service-card-header">
+						<i class="bi bi-window-stack service-card-icon"></i>
+						<h3 class="service-card-name">Full-Stack Integration</h3>
+					</div>
+					<p class="service-card-desc">
+						Building responsive client interfaces with Vue.js 3, Bootstrap 5, and Tailwind CSS, integrating
+						them seamlessly with backend APIs.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========================================================
+         Technical Skills Section
+         ======================================================== -->
+		<section class="skills-section" id="skills">
+			<h2 class="section-colored-heading heading-skills" data-aos="fade-up">
+				TECHNICAL SKILLS
+			</h2>
+
+			<div class="skills-categories-stack">
+				<!-- Backend -->
+				<div class="skill-category-card" data-aos="fade-up">
+					<h3 class="skill-cat-title"><i class="bi bi-cpu"></i> Backend Development</h3>
+					<div class="skill-pills-wrap">
+						<span class="skill-pill featured">Python</span>
+						<span class="skill-pill featured">Django</span>
+						<span class="skill-pill">RESTful API Development</span>
+						<span class="skill-pill">Backend Architecture</span>
+						<span class="skill-pill">API Integration</span>
+						<span class="skill-pill">Authentication &amp; Authorization</span>
+						<span class="skill-pill">Background Tasks (Celery)</span>
+						<span class="skill-pill">WebSocket / Real-Time Communication</span>
+					</div>
+				</div>
+
+				<!-- Databases -->
+				<div class="skill-category-card" data-aos="fade-up">
+					<h3 class="skill-cat-title"><i class="bi bi-database"></i> Databases &amp; Caching</h3>
+					<div class="skill-pills-wrap">
+						<span class="skill-pill featured">PostgreSQL</span>
+						<span class="skill-pill featured">Redis</span>
+						<span class="skill-pill">Database Design</span>
+						<span class="skill-pill">Query Optimization</span>
+						<span class="skill-pill">Data Modeling</span>
+					</div>
+				</div>
+
+				<!-- DevOps -->
+				<div class="skill-category-card" data-aos="fade-up">
+					<h3 class="skill-cat-title"><i class="bi bi-hdd-network"></i> DevOps &amp; Infrastructure</h3>
+					<div class="skill-pills-wrap">
+						<span class="skill-pill featured">Linux / Ubuntu</span>
+						<span class="skill-pill featured">AWS</span>
+						<span class="skill-pill featured">Docker</span>
+						<span class="skill-pill">Nginx</span>
+						<span class="skill-pill">Gunicorn</span>
+						<span class="skill-pill">Uvicorn</span>
+						<span class="skill-pill">Git &amp; GitHub</span>
+						<span class="skill-pill">Cloudflare R2</span>
+						<span class="skill-pill">CI/CD Fundamentals</span>
+					</div>
+				</div>
+
+				<!-- Streaming -->
+				<div class="skill-category-card" data-aos="fade-up">
+					<h3 class="skill-cat-title"><i class="bi bi-camera-reels"></i> Streaming Technologies</h3>
+					<div class="skill-pills-wrap">
+						<span class="skill-pill featured">HTTP Live Streaming (HLS)</span>
+						<span class="skill-pill featured">Video-on-Demand (VOD)</span>
+						<span class="skill-pill">LiveKit</span>
+						<span class="skill-pill">WebRTC</span>
+						<span class="skill-pill">FFmpeg</span>
+						<span class="skill-pill">Shaka Player</span>
+						<span class="skill-pill">Cloudflare R2 Storage</span>
+					</div>
+				</div>
+
+				<!-- Frontend -->
+				<div class="skill-category-card" data-aos="fade-up">
+					<h3 class="skill-cat-title"><i class="bi bi-code-slash"></i> Frontend Development</h3>
+					<div class="skill-pills-wrap">
+						<span class="skill-pill featured">JavaScript</span>
+						<span class="skill-pill featured">Vue.js 3</span>
+						<span class="skill-pill">HTML5</span>
+						<span class="skill-pill">CSS3</span>
+						<span class="skill-pill">Bootstrap 5</span>
+						<span class="skill-pill">Tailwind CSS</span>
+						<span class="skill-pill">Axios</span>
+						<span class="skill-pill">Pinia</span>
+						<span class="skill-pill">Vite</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========================================================
+         Contact Section (Editorial Reference Style)
+         ======================================================== -->
+		<section class="contact-section" id="contact">
+			<h2 class="contact-heading-clean" data-aos="fade-up">Contact</h2>
+
+			<p class="contact-intro-p" data-aos="fade-up" data-aos-delay="100">
+				I am currently available for backend engineering roles, system architecture consulting, and high-impact
+				web development projects. Based in Suez, Egypt — open to remote collaborations and full-time
+				opportunities.
+			</p>
+
+			<a href="mailto:contact@hadytaha.dev" class="contact-email-cta" data-aos="fade-up" data-aos-delay="150">
+				<span>contact@hadytaha.dev</span>
+				<i class="bi bi-arrow-up-right"></i>
+			</a>
+
+			<!-- Social Links Row -->
+			<div class="contact-social-icons-row" data-aos="fade-up" data-aos-delay="200">
+				<a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-circle-link"
+					aria-label="GitHub Profile" title="GitHub">
+					<i class="bi bi-github"></i>
+				</a>
+				<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle-link"
+					aria-label="LinkedIn Profile" title="LinkedIn">
+					<i class="bi bi-linkedin"></i>
+				</a>
+				<a href="mailto:contact@hadytaha.dev" class="social-circle-link" aria-label="Send Email" title="Email">
+					<i class="bi bi-envelope-fill"></i>
+				</a>
+				<a href="#contact" class="social-circle-link" aria-label="Download CV" title="Download CV">
+					<i class="bi bi-file-earmark-person"></i>
+				</a>
+				<a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-circle-link"
+					aria-label="X Twitter" title="X Twitter">
+					<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+						<path
+							d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+					</svg>
+				</a>
+			</div>
+
+			<!-- Minimalist Contact Form -->
+			<form id="contactForm" class="contact-form-minimal" data-aos="fade-up" data-aos-delay="250">
+				<div class="form-grid-2col">
+					<div class="form-group-minimal">
+						<label for="contactName" class="input-label-minimal">Your Name</label>
+						<input type="text" id="contactName" class="input-minimal" placeholder="e.g. Alex Miller"
+							required>
+					</div>
+					<div class="form-group-minimal">
+						<label for="contactEmail" class="input-label-minimal">Email Address</label>
+						<input type="email" id="contactEmail" class="input-minimal" placeholder="e.g. alex@company.com"
+							required>
+					</div>
+				</div>
+
+				<div class="form-group-minimal">
+					<label for="contactMessage" class="input-label-minimal">Message</label>
+					<textarea id="contactMessage" class="input-minimal" rows="3"
+						placeholder="Tell me about your project, system architecture requirements, or inquiry..."
+						required></textarea>
+				</div>
+
+				<button type="submit" class="btn-send-message">
+					<span>Send Message</span>
+					<i class="bi bi-arrow-up-right"></i>
+				</button>
+			</form>
+		</section>
+
+	</main>
+
+	<!-- ========================================================
+    Minimalist Footer
+    ======================================================== -->
+	<footer class="site-footer">
+		<div class="site-container">
+			<p class="footer-copy">
+				© 2026 Hady Taha. All rights reserved. Backend-Focused Software Engineer.
+			</p>
+		</div>
+	</footer>
+
+	<!-- Floating Scroll To Top Button -->
+	<button type="button" class="btn-scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+		<i class="bi bi-chevron-up"></i>
+	</button>
+
+	<!-- ========================================================
+    Project Detail Modal
+    ======================================================== -->
+	<div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="modalProjectTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content dark-modal">
+				<div class="modal-header dark-modal-header">
+					<div>
+						<span class="project-sub-tag" id="modalProjectCategory">CATEGORY</span>
+						<h3 class="modal-title h5 font-weight-bold text-white mt-1" id="modalProjectTitle">Project Title
+						</h3>
+					</div>
+					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body dark-modal-body">
+					<img src="" alt="" id="modalProjectImg" class="img-fluid rounded-3 mb-3 w-100"
+						style="max-height: 280px; object-fit: cover;">
+					<p id="modalProjectDesc" class="text-secondary mb-3"></p>
+
+					<h4 class="h6 text-white font-weight-bold mb-2">Key Architectural Features</h4>
+					<ul id="modalProjectFeatures" class="list-unstyled mb-3 text-secondary" style="line-height: 1.8;">
+					</ul>
+
+					<h4 class="h6 text-white font-weight-bold mb-2">Technologies &amp; Tools</h4>
+					<div id="modalProjectTags" class="d-flex flex-wrap gap-2"></div>
+				</div>
+				<div class="modal-footer dark-modal-footer">
+					<button type="button" class="btn btn-secondary btn-sm rounded-pill px-4"
+						data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Core JavaScript Libraries -->
+	<script src="js/lib/jquery.min.js"></script>
+	<script src="js/lib/bootstrap.bundle.min.js"></script>
+	<script src="js/lib/aos.js"></script>
+	<script src="js/lib/toastify-js.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+======================================================================
+============================PLUGINS===================================
+======================================================================
+|                                                                    |
+
+1 - Swiper ( v11.0.7 ) - > https://swiperjs.com/
+    
+    src:
+        css/lib/swiper-bundle.min.css"
+        js/lib/swiper-bundle.min.js
+
+----------------------------------------------------------------------
+
+2 - sweetalert2 ( v11.10.5 ) - >  https://sweetalert2.github.io/
+    
+    src:
+        js/lib/sweetalert.js
+
+----------------------------------------------------------------------
+
+3 - toastify-js ( v5.19.2 ) - > https://apvarun.github.io/toastify-js/
+    
+    src:
+        js/lib/toastify-js.js
+
+----------------------------------------------------------------------
+
+4 - Animate On Scroll ( v2.3.1 ) -> https://michalsnik.github.io/aos/
+
+    src:
+        css/lib/aos.css
+        js/lib/aos.js
+
+----------------------------------------------------------------------
+
+5 - animate ( v4.1.1 ) -> https://animate.style/
+
+    src:
+        css/lib/animate.min.css
+
+----------------------------------------------------------------------
+
+6 - js-cookie ( v3.0.5 ) -> https://github.com/js-cookie/js-cookie
+    
+    src:
+        js/lib/js-cookie.min.js
